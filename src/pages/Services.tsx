@@ -1,5 +1,6 @@
 import { RevealText } from '../components/RevealText';
 import { motion } from 'motion/react';
+import { SEO } from '../components/SEO';
 
 const servicesList = [
   {
@@ -31,6 +32,10 @@ const servicesList = [
 export function Services() {
   return (
     <div className="bg-pearl-100 w-full">
+      <SEO 
+        title="Nos Services" 
+        description="Découvrez nos expertises en chauffage, ventilation, facility management et rénovation complète à Genève. Des solutions thermodynamiques d'exception."
+      />
       <div className="pt-40 pb-20 px-6 lg:px-8 max-w-7xl mx-auto group">
         <span className="text-sienna-500 font-medium tracking-[0.3em] uppercase text-xs mb-4 block">Notre Expertise</span>
         <h1 className="text-5xl md:text-7xl lg:text-[6rem] text-slate-900 mb-8 leading-[1.05] italic font-serif">

@@ -3,6 +3,7 @@ import { ParallaxHero } from '../components/ParallaxHero';
 import { RevealText } from '../components/RevealText';
 import { motion } from 'motion/react';
 import { ArrowRight, Thermometer, Building2, Wrench } from 'lucide-react';
+import { SEO } from '../components/SEO';
 
 const fadeIn = {
   hidden: { opacity: 0, y: 30 },
@@ -16,6 +17,10 @@ const fadeIn = {
 export function Home() {
   return (
     <>
+      <SEO 
+        title="Accueil" 
+        description="AVCHAUFFAGE: L'excellence thermique au cœur de Genève. Installation, maintenance et rénovation énergétique sur mesure pour les pompes à chaleur et systèmes de ventilation." 
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen w-full flex items-center overflow-hidden bg-pearl-100 pt-20">
         {/* Background Decorative Element */}

@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'motion/react';
 import { useEffect } from 'react';
+import { HelmetProvider } from 'react-helmet-async';
 
 import { Layout } from './components/Layout';
 import { Home } from './pages/Home';
@@ -34,9 +35,11 @@ function AnimatedRoutes() {
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <AnimatedRoutes />
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <ScrollToTop />
+        <AnimatedRoutes />
+      </BrowserRouter>
+    </HelmetProvider>
   );
 }

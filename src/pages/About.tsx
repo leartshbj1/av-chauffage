@@ -1,9 +1,14 @@
 import { RevealText } from '../components/RevealText';
 import { motion } from 'motion/react';
+import { SEO } from '../components/SEO';
 
 export function About() {
   return (
     <div className="bg-white text-slate-900 min-h-screen">
+      <SEO 
+        title="Notre Vision" 
+        description="Découvrez l'ADN de la société AVCHAUFFAGE à Genève. Notre ambition : redéfinir les standards de l'ingénierie et du confort thermique en Suisse romande."
+      />
       <div className="pt-40 pb-16 px-6 lg:px-8 max-w-7xl mx-auto">
         <span className="text-sienna-500 font-medium tracking-[0.3em] uppercase text-xs mb-4 block">Notre Société</span>
         <h1 className="text-5xl md:text-7xl lg:text-[6rem] font-serif text-slate-900 mb-8 leading-[1.05] italic">

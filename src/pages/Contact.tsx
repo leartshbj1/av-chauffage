@@ -1,6 +1,7 @@
 import { RevealText } from '../components/RevealText';
 import { motion } from 'motion/react';
 import { useForm, ValidationError } from '@formspree/react';
+import { SEO } from '../components/SEO';
 
 function ContactForm() {
   // If you don't have a VITE_FORMSPREE_ID, users will need to add it to .env
@@ -77,6 +78,10 @@ function ContactForm() {
 export function Contact() {
   return (
     <div className="bg-pearl-100 min-h-screen">
+      <SEO 
+        title="Contact" 
+        description="Contactez AVCHAUFFAGE pour vos projets de chauffage ou ventilation à Genève. Notre équipe d'ingénierie technique est à votre disposition."
+      />
       <div className="pt-40 pb-16 px-6 lg:px-8 max-w-7xl mx-auto">
         <span className="text-sienna-500 font-medium tracking-[0.3em] uppercase text-xs mb-4 block">Nous Contacter</span>
         <h1 className="text-5xl md:text-7xl lg:text-[6rem] text-slate-900 mb-8 leading-[1.05] italic font-serif">
