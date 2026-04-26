@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-slate-850: #1B263B;
+  --color-slate-900: #0F172A;
+  --color-sienna-500: #C16B4D;
+  --color-sienna-600: #B05D41;
+  --color-sienna-700: #9C4B30;
+  --color-pearl-100: #F8F9FA;
+  --color-pearl-200: #eef0f2;
+}
+
+@layer base {
+  body {
+    @apply bg-pearl-100 text-slate-900 font-sans antialiased selection:bg-sienna-500 selection:text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight;
+  }
+}
+
+/* Custom Scrollbar for Luxury Feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f8f9fa;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
