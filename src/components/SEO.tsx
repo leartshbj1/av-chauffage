@@ -11,7 +11,7 @@ interface SEOProps {
 export function SEO({ 
   title, 
   description, 
-  keywords = "chauffage, ventilation, pompe à chaleur, rénovation énergétique, facility management, Genève, Suisse romande, AVCHAUFFAGE",
+  keywords = "chauffage, pompe à chaleur, rénovation énergétique, facility management, Genève, Suisse romande, AVCHAUFFAGE",
   image = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200", 
   url = "https://av-chauffage.ch" 
 }: SEOProps) {

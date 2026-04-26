@@ -5,10 +5,10 @@ import { SEO } from '../components/SEO';
 const servicesList = [
   {
     id: 'heating',
-    title: 'Chauffage & Ventilation',
+    title: 'Chauffage & Pompes à Chaleur',
     subtitle: 'Installation de pointe',
     img: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80',
-    desc: 'Nous concevons et déployons des systèmes thermodynamiques sur-mesure. Des pompes à chaleur nouvelle génération aux systèmes de ventilation double flux, chaque paramètre est étudié pour maximiser le confort thermique tout en minimisant l\'empreinte écologique de vos espaces de vie ou de travail.',
+    desc: 'Nous concevons et déployons des systèmes thermodynamiques sur-mesure. Des pompes à chaleur nouvelle génération aux systèmes de régulation thermique avancés, chaque paramètre est étudié pour maximiser le confort thermique tout en minimisant l\'empreinte écologique de vos espaces de vie ou de travail.',
     reverse: false,
   },
   {
@@ -34,7 +34,7 @@ export function Services() {
     <div className="bg-pearl-100 w-full">
       <SEO 
         title="Nos Services" 
-        description="Découvrez nos expertises en chauffage, ventilation, facility management et rénovation complète à Genève. Des solutions thermodynamiques d'exception."
+        description="Découvrez nos expertises en chauffage, facility management et rénovation complète à Genève. Des solutions thermodynamiques d'exception."
       />
       <div className="pt-40 pb-20 px-6 lg:px-8 max-w-7xl mx-auto group">
         <span className="text-sienna-500 font-medium tracking-[0.3em] uppercase text-xs mb-4 block">Notre Expertise</span>

@@ -19,7 +19,7 @@ export function Home() {
     <>
       <SEO 
         title="Accueil" 
-        description="AVCHAUFFAGE: L'excellence thermique au cœur de Genève. Installation, maintenance et rénovation énergétique sur mesure pour les pompes à chaleur et systèmes de ventilation." 
+        description="AVCHAUFFAGE: L'excellence thermique au cœur de Genève. Installation, maintenance et rénovation énergétique sur mesure pour les pompes à chaleur et installations thermiques." 
       />
       {/* Hero Section */}
       <section className="relative min-h-screen w-full flex items-center overflow-hidden bg-pearl-100 pt-20">
@@ -64,7 +64,7 @@ export function Home() {
               <div className="absolute inset-0 bg-black/20"></div>
               <div className="absolute bottom-6 left-6 text-white z-10">
                 <span className="text-[10px] uppercase tracking-widest opacity-90 drop-shadow-md">01 / Installation</span>
-                <h3 className="text-2xl lg:text-3xl font-serif italic mt-2 drop-shadow-md">Chauffage & Ventilation</h3>
+                <h3 className="text-2xl lg:text-3xl font-serif italic mt-2 drop-shadow-md">Chauffage & Pompes à Chaleur</h3>
               </div>
             </div>
             
@@ -137,8 +137,8 @@ export function Home() {
             {[
               {
                 icon: <Thermometer size={32} strokeWidth={2} />,
-                title: 'Chauffage & Ventilation',
-                desc: 'Pompes à chaleur, systèmes CVC et régulations thermiques de pointe pour les bâtiments les plus exigeants.',
+                title: 'Chauffage & Pompes à Chaleur',
+                desc: 'Pompes à chaleur et régulations thermiques de pointe pour les bâtiments les plus exigeants.',
               },
               {
                 icon: <Building2 size={32} strokeWidth={2} />,

@@ -81,7 +81,7 @@ export function Contact() {
     <div className="bg-pearl-100 min-h-screen">
       <SEO 
         title="Contact" 
-        description="Contactez AVCHAUFFAGE pour vos projets de chauffage ou ventilation à Genève. Notre équipe d'ingénierie technique est à votre disposition."
+        description="Contactez AVCHAUFFAGE pour vos projets de chauffage à Genève. Notre équipe d'ingénierie technique est à votre disposition."
       />
       <div className="pt-40 pb-16 px-6 lg:px-8 max-w-7xl mx-auto">
         <span className="text-sienna-500 font-medium tracking-[0.3em] uppercase text-xs mb-4 block">Nous Contacter</span>
