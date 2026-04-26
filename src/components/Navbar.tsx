@@ -76,6 +76,9 @@ export function Navbar() {
         <button
           className="md:hidden p-2 rounded-md focus:outline-none"
           onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label={mobileOpen ? "Fermer le menu" : "Ouvrir le menu principal"}
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-menu"
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -85,6 +88,7 @@ export function Navbar() {
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
+            id="mobile-menu"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}

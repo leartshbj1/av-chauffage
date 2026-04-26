@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MessageCircle, ArrowUp } from 'lucide-react';
 import { cn } from '../lib/utils';
+import { siteConfig } from '../config/site';
 
 export function FloatingWidgets() {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,8 +27,7 @@ export function FloatingWidgets() {
     });
   };
 
-  const whatsappNumber = "41783391722";
-  const whatsappMessage = encodeURIComponent("Bonjour AVCHAUFFAGE, je souhaiterais vous contacter au sujet de vos services.");
+  const whatsappMessage = encodeURIComponent(siteConfig.whatsappMessage);
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
@@ -49,7 +49,7 @@ export function FloatingWidgets() {
 
       {/* WhatsApp Button */}
       <motion.a
-        href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+        href={`https://wa.me/${siteConfig.phone.replace('+', '')}?text=${whatsappMessage}`}
         target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0 }}

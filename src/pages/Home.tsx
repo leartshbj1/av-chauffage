@@ -118,6 +118,7 @@ export function Home() {
             <img 
               src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" 
               alt="Design d'intérieur" 
+              loading="lazy"
               className="w-full h-full object-cover"
             />
           </motion.div>

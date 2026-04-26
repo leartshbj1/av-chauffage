@@ -2,11 +2,12 @@ import { RevealText } from '../components/RevealText';
 import { motion } from 'motion/react';
 import { useForm, ValidationError } from '@formspree/react';
 import { SEO } from '../components/SEO';
+import { siteConfig } from '../config/site';
 
 function ContactForm() {
   // If you don't have a VITE_FORMSPREE_ID, users will need to add it to .env
   // Formspree sometimes supports using the email address directly.
-  const formspreeId = import.meta.env.VITE_FORMSPREE_ID || 'info@av-chauffage.ch';
+  const formspreeId = import.meta.env.VITE_FORMSPREE_ID || siteConfig.email;
   const [state, handleSubmit] = useForm(formspreeId);
 
   if (state.succeeded) {
@@ -110,12 +111,12 @@ export function Contact() {
         >
           <div className="mb-10 text-slate-900 mt-12 lg:mt-0">
             <h3 className="font-serif text-2xl mb-2 italic">Contact Direct</h3>
-            <p className="text-slate-600 font-light text-lg mb-4">Avenue d'Aïre 7<br/>1203 Genève, Suisse</p>
+            <p className="text-slate-600 font-light text-lg mb-4">{siteConfig.addressLine1}<br/>{siteConfig.addressLine2}</p>
             <p className="text-slate-600 font-light text-lg mb-1">
-              <a href="tel:+41783391722" className="hover:text-sienna-500 transition-colors">+41 78 339 17 22</a>
+              <a href={`tel:${siteConfig.phone}`} className="hover:text-sienna-500 transition-colors">{siteConfig.phoneDisplay}</a>
             </p>
             <p className="text-slate-600 font-light text-lg">
-              <a href="mailto:info@av-chauffage.ch" className="hover:text-sienna-500 transition-colors">info@av-chauffage.ch</a>
+              <a href={`mailto:${siteConfig.email}`} className="hover:text-sienna-500 transition-colors">{siteConfig.email}</a>
             </p>
           </div>
 
@@ -128,7 +129,7 @@ export function Contact() {
                  Une question technique ? Un projet de rénovation ? Notre équipe technique est réactive et à votre disposition.
                </p>
                <a 
-                 href={`https://wa.me/41783391722?text=${encodeURIComponent("Bonjour AVCHAUFFAGE, je souhaiterais vous contacter au sujet de vos services.")}`}
+                 href={`https://wa.me/${siteConfig.phone.replace('+', '')}?text=${encodeURIComponent(siteConfig.whatsappMessage)}`}
                  target="_blank"
                  rel="noopener noreferrer"
                  className="inline-flex items-center gap-4 bg-[#25D366] text-white px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-[#20bd5a] transition-all hover:scale-105"

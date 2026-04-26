@@ -61,11 +61,12 @@ export function About() {
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 2, ease: "easeOut" }}
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80" 
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" 
             alt="Corporate Buildings"
+            loading="lazy"
             className="w-full h-full object-cover opacity-60"
          />
-         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent" />
+         <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent" />
       </div>
     </div>
   );

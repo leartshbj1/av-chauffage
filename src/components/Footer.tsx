@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { siteConfig } from '../config/site';
 
 export function Footer() {
   return (
@@ -6,11 +7,11 @@ export function Footer() {
       <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
         <div>
           <span className="block text-[10px] text-slate-400 uppercase tracking-widest mb-2 font-mono">Contact Technique</span>
-          <a href="tel:+41783391722" className="text-lg lg:text-xl font-medium tracking-tight hover:text-sienna-500 transition-colors">+41 78 339 17 22</a>
+          <a href={`tel:${siteConfig.phone}`} className="text-lg lg:text-xl font-medium tracking-tight hover:text-sienna-500 transition-colors">{siteConfig.phoneDisplay}</a>
         </div>
         <div>
           <span className="block text-[10px] text-slate-400 uppercase tracking-widest mb-2 font-mono">Adresse Suisse</span>
-          <span className="text-lg lg:text-xl font-serif italic">Avenue d'Aïre 7, 1203 Genève</span>
+          <span className="text-lg lg:text-xl font-serif italic">{siteConfig.addressLine1}, {siteConfig.addressLine2}</span>
         </div>
       </div>
       
